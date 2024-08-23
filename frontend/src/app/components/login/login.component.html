@@ -1,0 +1,14 @@
+<app-navbar></app-navbar>
+<form (ngSubmit)="login()">
+    <div>
+        <label>email</label>
+        <input type="email" name="email" required [(ngModel)]="email">
+    </div>
+    <div>
+        <label>password</label>
+        <input type="password" name="password" required [(ngModel)]="password">
+    </div>
+    <div>
+        <input type="submit" value="Submit">
+    </div>
+</form>

@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+justify-content: space-between;
+}
+.home{
+    cursor: pointer;
+}
+.login{
+    cursor: pointer;
+}
+.signup{
+    cursor: pointer;
+}
+.logout{
+    cursor: pointer;
+}

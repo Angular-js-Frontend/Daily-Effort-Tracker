@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+
+<form (ngSubmit)="signup()">
+    <div>
+        <label>email: </label>
+        <input type="email" name="email" [(ngModel)]="email" >
+    </div>
+    <div>
+        <label>password: </label>
+        <input type="password"  name="password" [(ngModel)]="password" >
+    </div>
+    <div>
+        <label>confirm password: </label>
+        <input type="password"  name="confirmpassword" [(ngModel)]="confirmpassword" >
+    </div>
+    <div>{{error}}</div>
+    <div>
+        <input type="submit" >
+    </div>
+</form>

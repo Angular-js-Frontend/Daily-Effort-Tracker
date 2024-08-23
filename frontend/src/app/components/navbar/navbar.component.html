@@ -1,0 +1,18 @@
+<div class="container">
+    <h2 (click)="home()" class="home">Daily Efforts Tracker</h2>
+    
+    <div *ngIf='loginInfo.email==="";else show_email' >
+        <div class="minicontainer">
+            <div (click)="login()" class="login">login</div>
+            <div (click)="signup()" class="signup">signup</div>
+        </div>
+    </div>
+    <ng-template #show_email>
+        <div>
+            <div>{{loginInfo.email}}</div>
+            <div (click)="logout()" class="logout">logout</div>
+        </div>
+    </ng-template>
+    
+    
+</div>
