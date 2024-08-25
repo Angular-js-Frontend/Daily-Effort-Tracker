@@ -46,14 +46,12 @@ signup(){
         console.error(err)
         this.error=err.error.message
         this.loginInfo.updateLogin({email:"",token:"",error:"",isloading:false})
-
       }
     })
   }
   catch(err){
     this.error="something went wrong with the server"
     this.loginInfo.updateLogin({email:"",token:"",error:"",isloading:false})
-
   }
 }
 

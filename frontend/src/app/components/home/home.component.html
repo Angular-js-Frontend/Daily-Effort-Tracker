@@ -1,2 +1,28 @@
 <app-navbar></app-navbar>
-<div>adsf</div>
+<div class="container">
+    <div>
+       
+        <div *ngFor="let item of value" >
+            <div>{{item.time}}</div>
+            <div>{{item.date}}</div>
+            <div><button (click)="deleteitem(item.id)">Delete</button></div>
+        </div>
+        <div>{{error}}</div>
+    </div>
+ 
+        <form (ngSubmit)="additem()">
+            <div>
+                <label>time</label>
+                <input type="text" name="time" [(ngModel)]="time" />
+            </div>
+            <div>
+                <label>date</label>
+                <input type="date" name="date" [(ngModel)]="date"/>
+            </div>
+            <div>
+                <input type="submit" >
+            </div>
+            {{formError}}
+        </form>
+  
+</div>
