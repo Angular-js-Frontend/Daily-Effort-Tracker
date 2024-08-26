@@ -25,6 +25,14 @@ export class LoginService {
  clearLogin(){
   this.login.next({email:"",token:"",error:"",isloading:false})
   localStorage.removeItem('login')
+ }
+ isloggedin(){
+  if(this.login.value.token===""){
+    return false;
+  }
+  else{
+    return true;
+  }
  }  
 
 }
